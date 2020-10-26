@@ -134,7 +134,7 @@ const DummyPDF = ({eachInfo}) => {
           <Text style={{ color: "grey" }}>Destination:{eachInfo.destination}</Text>
           <View>
             <Text style={{ color: "grey" }}>Trip - Type</Text>
-            <Text style={{ fontSize: "14", marginLeft: "10" }}>{eachInfo.shipperCarrier}</Text>
+            <Text style={{ fontSize: "14", marginLeft: "10" }}>{eachInfo.accountToPay}</Text>
           </View>
         </View>
 
