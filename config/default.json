@@ -1,0 +1,4 @@
+  
+{
+    "mongoURI":"mongodb+srv://Martin:Martin@mern.wercy.mongodb.net/INVOICE?retryWrites=true&w=majority"
+}

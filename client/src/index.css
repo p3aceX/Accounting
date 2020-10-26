@@ -1,0 +1,299 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* navlink design */
+.navbar {
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.navbar li a {
+  color: white;
+  background-color: #58554ffb;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: medium;
+}
+.navbar li a.active {
+  color: white;
+  background-color: #9e9a93fb;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: medium;
+  border-bottom: 2px solid blue;
+}
+
+.navbar li a:hover {
+  background-color: grey;
+}
+
+/* form design */
+
+.form form {
+  margin: 20px;
+  display: grid;
+  row-gap: 20px;
+}
+
+/*form header */
+.formHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formHeader p {
+  font-size: 30px;
+  color: black;
+  margin: 0px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+/*formfirst line */
+
+.formFirstLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  column-gap: 7px;
+}
+
+.formFirstLine input {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.formFirstLine input::placeholder {
+  font-size: 17px;
+}
+
+.formFirstLineRadios {
+  padding: 7px;
+  font-size: 20px;
+}
+
+.formFirstLineRadios label {
+  margin-right: 10px;
+}
+
+.formFirstLineRadios input[type="radio"]:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.formFirstLineRadios input[type="radio"]:checked:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: black;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+/* form second line */
+
+.formSecondLine {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.7fr;
+  column-gap: 30px;
+}
+
+.formSecondLine input {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.formSecondLine input::placeholder {
+  font-size: 17px;
+}
+
+.formMissingLine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+  
+  .formMissingLine input {
+    border: 1px solid #707070;
+    padding: 10px;
+  }
+  
+  .formMissingLine input::placeholder {
+    font-size: 17px;
+  }
+/* form third line */
+
+.formThirdLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.formThirdLine input {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.formThirdLine input::placeholder {
+  font-size: 17px;
+}
+
+/* for fourth line */
+.formFourthLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.formFourthLine input {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.formFourthLine input::placeholder {
+  font-size: 17px;
+}
+
+.formFifthLine input[type="radio"]:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.formFifthLine input[type="radio"]:checked:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: black;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.formFifthLine {
+  font-size: 20px;
+}
+
+.formFifthLine label {
+  margin-right: 10px;
+}
+
+/*sixth form line */
+
+.formSixthLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.formSixthLine input {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.formSixthLine input::placeholder {
+  font-size: 17px;
+}
+
+.formSeventhLine {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    column-gap: 30px;
+  }
+  
+  .formSeventhLine input {
+    border: 1px solid #707070;
+    padding: 10px;
+  }
+  
+  .formSeventhLine input::placeholder {
+    font-size: 17px;
+  }
+
+.formEighthLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.formEighthLine input {
+  border: 1px solid #707070;
+  padding: 10px;
+}
+
+.formEighthLine input::placeholder {
+  font-size: 17px;
+}
+
+.formSubmit{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formSubmit input{
+    background-color: black;
+    color:white;
+    padding:7px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+/* all form styles end here */
+
+div.entries{
+  display:grid;
+  grid-template-columns: auto;
+  margin:10px 30px;
+}
+
+div.entriesHeader{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #E7E7E7D1;
+  padding:10px;
+  font-weight: bold;
+}
+
+div.entryRow{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding:10px;
+}
+
+/* entries styles end here */
+
