@@ -101,7 +101,7 @@ const DummyPDF = ({eachInfo}) => {
               Anati Technologies Private Limited
             </Text>
             <Text style={{ fontSize: "22", color: "grey", marginLeft: "100" }}>
-              Trip ID:{eachInfo.tripId}
+              23AASCA7157M1Z3
             </Text>
             <Text style={{ fontSize: "11", marginLeft: "120" }}>
               C-25 Rani Awanti Bai Transport Nagar
@@ -114,27 +114,27 @@ const DummyPDF = ({eachInfo}) => {
 
         <View style={styles.secondLine}>
           <View>
-            <Text style={{padding:"4"}}>Hello</Text>
-            <Text style={{ fontSize: "30", fontWeight: "bold",padding:"4" }}>{eachInfo.name}</Text>
-            <Text style={{padding:"4"}}>Phone:{eachInfo.phone}</Text>
-            <Text style={{padding:"4"}}>Address:{eachInfo.address}</Text>
+            <Text style={{padding:"4"}}>Hello,</Text>
+            <Text style={{ fontSize: "23", fontWeight: "bold",padding:"4" }}>{eachInfo.name}</Text>
+            <Text style={{padding:"4"}}>{eachInfo.phone}</Text>
+            <Text style={{padding:"4"}}>{eachInfo.address}</Text>
           </View>
           <View>
-            <Text style={{ fontSize: "20", fontWeight: "bold",padding:"4" }}>Date:{eachInfo.date}</Text>
-            <Text style={{ fontSize: "20", fontWeight: "bold",padding:"4" }}>
-              Vehicle Number:{eachInfo.vehicleNumber}
+            <Text style={{ fontSize: "20", fontWeight: "bold",padding:"4",marginLeft:"120" }}>{eachInfo.date}</Text>
+            <Text style={{ fontSize: "20", fontWeight: "bold",padding:"4",marginLeft:"120" }}>
+              {eachInfo.vehicleNumber}
             </Text>
-            <Text style={{ fontSize: "13",padding:"4" }}>Driver Name:{eachInfo.driverName}</Text>
-            <Text style={{ fontSize: "13",padding:"4" }}>Driver Number:{eachInfo.driverNumber}</Text>
+            <Text style={{ fontSize: "13",padding:"4" }}><Text style={{color:"#2F4F4F"}}>Driver Name:</Text>{eachInfo.driverName}</Text>
+            <Text style={{ fontSize: "13",padding:"4" }}><Text style={{color:"#2F4F4F"}}>Driver Number:</Text>{eachInfo.driverNumber}</Text>
           </View>
         </View>
 
         <View style={styles.thirdLine}>
-          <Text style={{ color: "grey" }}>Origin:{eachInfo.origin}</Text>
-          <Text style={{ color: "grey" }}>Destination:{eachInfo.destination}</Text>
+          <Text style={{ color: "grey" }}><Text style={{color:"#2F4F4F",textDecoration:'underline'}}>Origin:</Text>{eachInfo.origin}</Text>
+          <Text style={{ color: "grey" }}><Text style={{color:"#2F4F4F",textDecoration:'underline'}}>Destination:</Text>{eachInfo.destination}</Text>
           <View>
-            <Text style={{ color: "grey" }}>Trip - Type</Text>
-            <Text style={{ fontSize: "14", marginLeft: "10" }}>{eachInfo.accountToPay}</Text>
+            <Text style={{ color: "grey" }}>{eachInfo.accountToPay}</Text>
+            <Text style={{ fontSize: "14", marginLeft: "0" }}>{eachInfo.commodity}</Text>
           </View>
         </View>
 
@@ -153,7 +153,7 @@ const DummyPDF = ({eachInfo}) => {
 
         <View style={styles.fifthLine}>
           <View style={styles.fifthLineLeft}>
-            <Image src={QR} style={{ width: "100", height: "100" }} />
+            <Image src={QR} style={{ width: "200", height: "200" }} />
             <Text style={{ fontSize: "15", padding: "4" }}>
               Scan or Pay using UPI
             </Text>
@@ -171,12 +171,12 @@ const DummyPDF = ({eachInfo}) => {
               <Text style={{marginLeft:"30"}}>-${eachInfo.accountPayAdvance}</Text>
             </View>
             <View style={styles.fifthLineRightEachTotal}>
-              <Text style={{marginRight:"30"}}>Total Advance</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.totalAdvance}</Text>
+              <Text style={{marginRight:"30",color:"#2F4F4F"}}>Total Advance</Text>
+              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>-${eachInfo.totalAdvance}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
-              <Text style={{marginRight:"30"}}>Balance</Text>
-              <Text style={{marginLeft:"30"}}>${eachInfo.balance}</Text>
+              <Text style={{marginRight:"30",color:"#2F4F4F"}}>Balance</Text>
+              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>${eachInfo.balance}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Comission</Text>
@@ -199,8 +199,8 @@ const DummyPDF = ({eachInfo}) => {
               <Text style={{marginLeft:"30"}}>-${eachInfo.tds}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
-              <Text style={{marginRight:"30"}}>Total Balance</Text>
-              <Text style={{marginLeft:"30"}}>${eachInfo.finalBalance}</Text>
+              <Text style={{marginRight:"30",color:"#2F4F4F"}}>Total Balance</Text>
+              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>${eachInfo.finalBalance}</Text>
             </View>
           </View>
         </View>

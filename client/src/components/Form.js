@@ -148,10 +148,10 @@ const Form = () => {
             type="radio"
             id="accountPay"
             name="accountToPay"
-            value="accountPay"
+            value="Account-Pay"
           />
           <label htmlFor="accountPay">Account-Pay</label>
-          <input type="radio" id="toPay" name="accountToPay" value="toPay" />
+          <input type="radio" id="toPay" name="accountToPay" value="To-Pay" />
           <label htmlFor="toPay">To-Pay</label>
         </div>
 

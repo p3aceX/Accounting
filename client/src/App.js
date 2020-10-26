@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Form from './components/Form';
 import Entries from './components/Entries';
+import PDF from './components/PDF';
 
 const App = () => {
   return (
