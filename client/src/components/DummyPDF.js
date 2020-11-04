@@ -115,9 +115,9 @@ const DummyPDF = ({eachInfo}) => {
         <View style={styles.secondLine}>
           <View>
             <Text style={{padding:"4"}}>Hello,</Text>
-            <Text style={{ fontSize: "23", fontWeight: "bold",padding:"4" }}>{eachInfo.name}</Text>
-            <Text style={{padding:"4"}}>{eachInfo.phone}</Text>
-            <Text style={{padding:"4"}}>{eachInfo.address}</Text>
+            <Text style={{ fontSize: 21, fontWeight: "bold",padding:"4" }}>{eachInfo.name}</Text>
+            <Text style={{fontSize: 20,padding:"4"}}>{eachInfo.phone}</Text>
+            <Text style={{fontSize: 20,padding:"4"}}>{eachInfo.address}</Text>
           </View>
           <View>
             <Text style={{ fontSize: "20", fontWeight: "bold",padding:"4",marginLeft:"120" }}>{eachInfo.date}</Text>
@@ -164,43 +164,43 @@ const DummyPDF = ({eachInfo}) => {
           <View style={styles.fifthLineRight}>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Cash Advance</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.cashAdvance}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}{eachInfo.cashAdvance}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Account Advance</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.accountPayAdvance}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}{eachInfo.accountPayAdvance}</Text>
             </View>
             <View style={styles.fifthLineRightEachTotal}>
               <Text style={{marginRight:"30",color:"#2F4F4F"}}>Total Advance</Text>
-              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>-${eachInfo.totalAdvance}</Text>
+              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>-{"Rs. "}{eachInfo.totalAdvance}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30",color:"#2F4F4F"}}>Balance</Text>
-              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>${eachInfo.balance}</Text>
+              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>{"Rs. "}{eachInfo.balance}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Comission</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.comission}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}.{eachInfo.comission}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Detention</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.detention}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}{eachInfo.detention}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Other Charges</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.otherCharges}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}{eachInfo.otherCharges}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Discounts</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.discount}</Text>
+              <Text style={{marginLeft:"30"}}>{"Rs. "}{eachInfo.discount}</Text>
             </View>
             <View style={styles.fifthLineRightEachTDS}>
               <Text style={{marginRight:"30"}}>TDS</Text>
-              <Text style={{marginLeft:"30"}}>-${eachInfo.tds}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}{eachInfo.tds}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30",color:"#2F4F4F"}}>Total Balance</Text>
-              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>${eachInfo.finalBalance}</Text>
+              <Text style={{marginLeft:"30",color:"#2F4F4F"}}>{"Rs. "}{eachInfo.finalBalance}</Text>
             </View>
           </View>
         </View>

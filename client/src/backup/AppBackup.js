@@ -1,6 +1,6 @@
 import React from "react";
 import MyDocument from "../pdf1";
-import { PDFDownloadLink,PDFViewer } from "@react-pdf/renderer";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 function App() {
   const info = [
