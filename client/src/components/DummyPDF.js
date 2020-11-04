@@ -180,7 +180,7 @@ const DummyPDF = ({eachInfo}) => {
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Comission</Text>
-              <Text style={{marginLeft:"30"}}>-{"Rs. "}.{eachInfo.comission}</Text>
+              <Text style={{marginLeft:"30"}}>-{"Rs. "}{eachInfo.comission}</Text>
             </View>
             <View style={styles.fifthLineRightEach}>
               <Text style={{marginRight:"30"}}>Detention</Text>
